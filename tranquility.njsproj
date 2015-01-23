@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>tranquility</Name>
+    <RootNamespace>tranquility</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>38435a1b-1bec-41d6-af07-2eb9d32fd9ff</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="config.js" />
+    <Compile Include="controllers\backend\home.js" />
+    <Compile Include="controllers\backend\login.js" />
+    <Compile Include="controllers\backend\people.js" />
+    <Compile Include="routes.js" />
+    <Compile Include="util\strings.js" />
+    <Content Include="layouts\backend\layout.html" />
+    <Content Include="layouts\backend\login.html" />
+    <Content Include="layouts\layout.html" />
+    <Content Include="package.json" />
+    <Content Include="public\backend\css\login.css" />
+    <Content Include="public\backend\css\styles.css" />
+    <Content Include="public\backend\images\login\splash.jpg" />
+    <Content Include="README.md" />
+    <Content Include="views\backend\login\forgot-password.html" />
+    <Content Include="views\backend\login\index.html" />
+    <Content Include="views\frontend\home.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="controllers\" />
+    <Folder Include="controllers\frontend\" />
+    <Folder Include="controllers\backend\" />
+    <Folder Include="layouts\" />
+    <Folder Include="layouts\frontend\" />
+    <Folder Include="layouts\backend\" />
+    <Folder Include="public\backend\css\" />
+    <Folder Include="public\backend\images\login\" />
+    <Folder Include="public\backend\js\" />
+    <Folder Include="public\backend\images\" />
+    <Folder Include="public\common\" />
+    <Folder Include="public\common\css\" />
+    <Folder Include="public\common\css\bootstrap\" />
+    <Folder Include="public\common\js\" />
+    <Folder Include="public\common\less\" />
+    <Folder Include="public\backend\" />
+    <Folder Include="public\frontend\" />
+    <Folder Include="public\frontend\css\" />
+    <Folder Include="public\frontend\images\" />
+    <Folder Include="public\frontend\js\" />
+    <Folder Include="util\" />
+    <Folder Include="public\" />
+    <Folder Include="views\" />
+    <Folder Include="views\backend\" />
+    <Folder Include="views\backend\login\" />
+    <Folder Include="views\frontend\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
