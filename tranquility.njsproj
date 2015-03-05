@@ -30,13 +30,22 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="api\index.js" />
     <Compile Include="app.js" />
     <Compile Include="config.js" />
     <Compile Include="controllers\backend\home.js" />
     <Compile Include="controllers\backend\login.js" />
     <Compile Include="controllers\backend\people.js" />
+    <Compile Include="data\knex-config.js" />
+    <Compile Include="data\migrations\20150222004447_v0.1_initial_db_schema.js" />
+    <Compile Include="data\model\index.js" />
+    <Compile Include="data\seeds\reference.js" />
     <Compile Include="routes.js" />
-    <Compile Include="util\strings.js" />
+    <Compile Include="util\database\index.js" />
+    <Compile Include="util\migrations\index.js" />
+    <Compile Include="util\passport\index.js" />
+    <Compile Include="util\strings\index.js" />
+    <Content Include="data\seeds\data\reference.json" />
     <Content Include="layouts\backend\layout.html" />
     <Content Include="layouts\backend\login.html" />
     <Content Include="layouts\layout.html" />
@@ -53,9 +62,15 @@
     <Folder Include="controllers\" />
     <Folder Include="controllers\frontend\" />
     <Folder Include="controllers\backend\" />
+    <Folder Include="data\migrations\" />
+    <Folder Include="data\model\" />
+    <Folder Include="data\seeds\" />
+    <Folder Include="data\seeds\data\" />
     <Folder Include="layouts\" />
     <Folder Include="layouts\frontend\" />
     <Folder Include="layouts\backend\" />
+    <Folder Include="data\" />
+    <Folder Include="api\" />
     <Folder Include="public\backend\css\" />
     <Folder Include="public\backend\images\login\" />
     <Folder Include="public\backend\js\" />
@@ -72,6 +87,10 @@
     <Folder Include="public\frontend\js\" />
     <Folder Include="util\" />
     <Folder Include="public\" />
+    <Folder Include="util\migrations\" />
+    <Folder Include="util\database\" />
+    <Folder Include="util\passport\" />
+    <Folder Include="util\strings\" />
     <Folder Include="views\" />
     <Folder Include="views\backend\" />
     <Folder Include="views\backend\login\" />
